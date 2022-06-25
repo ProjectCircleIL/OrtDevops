@@ -1,10 +1,10 @@
+## We will start with a quick intro to GIT and then move on to the introduction, Following that you will read the advanced book and move on to the advanced exercises
+
+## [Introduction to GIT](https://git.bobby.sh/training)
+
 ## [Advanced Git In-Depth](https://frontendmasters.com/courses/git-in-depth/)
 
-The accompanying exercises for [Nina Zakharenko's](https://twitter.com/nnja) [Git In-Depth Video Workshop](https://frontendmasters.com/courses/git-in-depth/) on Frontend Masters.
-
 ![](images/git-in-depth.png)
-
-[Watch the Course here](https://frontendmasters.com/courses/git-in-depth/).
 
 ## Resources
 
