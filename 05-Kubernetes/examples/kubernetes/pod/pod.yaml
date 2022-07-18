@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-cool-nginx2
+  labels:
+    app: mynginx
+spec:
+  containers:
+  - name: my-cool-nginx
+    image: omrisiri/nginx-hello:3.0
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+        #    env:
+        #    - name: environment
+        #      value: my-env
+    envFrom:
+    - configMapRef:
+        name: nginx-config
+    resources:
+      limits:
+        cpu: 0.1
+        memory: 200Mi
+      requests:
+        cpu: 0.1
+        memory: 200Mi
+
+

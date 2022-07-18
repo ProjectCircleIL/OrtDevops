@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: my-cool-nginx
+        image: omrisiri/nginx-hello:1.0
+        resources:
+          requests:
+            cpu: 0.1
+            memory: 100Mi
+        ports:
+        - containerPort: 80
+          protocol: TCP
+          name: http

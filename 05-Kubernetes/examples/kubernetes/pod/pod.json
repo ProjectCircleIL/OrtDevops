@@ -1,0 +1,25 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "my-cool-nginx",
+    "labels": {
+      "app": "mynginx"
+    }
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "my-cool-nginx",
+        "image": "omrisiri/nginx-hello",
+        "ports": [
+          {
+            "containerPort": 8080,
+            "protocol": "TCP"
+          }
+        ]
+      }
+    ]
+  }
+}
+

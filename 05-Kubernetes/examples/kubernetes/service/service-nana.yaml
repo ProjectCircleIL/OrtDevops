@@ -1,0 +1,14 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-service-nana
+spec:
+  type: LoadBalancer
+  selector:
+    tier: frontend
+    app: nana
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: http

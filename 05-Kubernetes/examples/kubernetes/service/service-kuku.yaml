@@ -1,0 +1,13 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-service-kuku
+spec:
+  selector:
+    tier: frontend
+    app: kuku
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: http
